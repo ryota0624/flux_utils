@@ -15,7 +15,7 @@ module.exports = {
   module: {
     // ローダ設定
     loaders: [
-      {test: /\.js$/, loader: "babel"},
+      {test: /\.js$/, exclude: /node_modules/, loader: 'babel'},
     ]
   },
   resolve: {
